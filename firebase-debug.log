@@ -1,0 +1,43 @@
+[debug] [2021-10-05T22:31:24.880Z] ----------------------------------------------------------------------
+[debug] [2021-10-05T22:31:24.882Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\kingm\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only hosting
+[debug] [2021-10-05T22:31:24.883Z] CLI Version:   9.19.0
+[debug] [2021-10-05T22:31:24.883Z] Platform:      win32
+[debug] [2021-10-05T22:31:24.883Z] Node Version:  v16.9.1
+[debug] [2021-10-05T22:31:24.885Z] Time:          Tue Oct 05 2021 18:31:24 GMT-0400 (Eastern Daylight Time)
+[debug] [2021-10-05T22:31:24.885Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-10-05T22:31:24.997Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-10-05T22:31:24.998Z] > authorizing via signed-in user (mking811@g.rwu.edu)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2021-10-05T22:31:25.044Z] [hub] writing locator at C:\Users\kingm\AppData\Local\Temp\hub-friendlyeats-26aca.json
+[debug] [2021-10-05T22:31:25.087Z] > refreshing access token with scopes: []
+[debug] [2021-10-05T22:31:25.088Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-05T22:31:25.224Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Tue, 05 Oct 2021 22:31:24 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-05T22:31:25.265Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/friendlyeats-26aca/sites 
+[debug] [2021-10-05T22:31:25.705Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/friendlyeats-26aca/sites 200
+[debug] [2021-10-05T22:31:25.707Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/friendlyeats-26aca/sites {}
+[debug] [2021-10-05T22:31:25.707Z] Failed to list hosting sites
+[debug] 
+[debug] [2021-10-05T22:31:25.709Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/friendlyeats-26aca/webApps/-/config [none]
+[debug] [2021-10-05T22:31:26.332Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/friendlyeats-26aca/webApps/-/config 200
+[debug] [2021-10-05T22:31:26.333Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/friendlyeats-26aca/webApps/-/config {"projectId":"friendlyeats-26aca","storageBucket":"friendlyeats-26aca.appspot.com","locationId":"us-west2","apiKey":"AIzaSyBqame42ri7znsdBB4zPXTZ6dFlwvO-7Qk","authDomain":"friendlyeats-26aca.firebaseapp.com","messagingSenderId":"615200597725"}
+[info] i  hosting: Serving hosting files from: ./ {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1m./\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[warn] !  emulators: The Emulator UI requires a project ID to start. Configure your default project with 'firebase use' or pass the --project flag. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI requires a project ID to start. Configure your default project with 'firebase use' or pass the --project flag."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┐
+│ Emulator │ Host:Port      │
+├──────────┼────────────────┤
+│ Hosting  │ localhost:5000 │
+└──────────┴────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: None
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2021-10-05T22:35:11.176Z] Received signal SIGHUP 1
